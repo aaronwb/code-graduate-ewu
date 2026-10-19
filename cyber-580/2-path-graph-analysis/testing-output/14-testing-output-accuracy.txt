@@ -1,0 +1,202 @@
+    ~/Downloads/14  ./_run-accuracy.sh small.json small_q.txt                                         ✔ 
+============================================================
+PATHFINDER ACCURACY
+============================================================
+Landmarks: 16
+Refinement: 100 ms
+Selection: current coverage/farthest-first
+Graph: small.json
+Queries: small_q.txt
+============================================================
+
+0.001 seconds
+Preprocessing started.
+Preprocessing limit: 60 seconds.
+Preprocessing working deadline: 59.500 seconds.
+Loaded graph: 100 nodes, 300 undirected edges, 600 adjacency entries.
+Connected components: 1
+Largest component: 100 nodes.
+Configured landmark target: 16.
+Configured query refinement period: 100 ms.
+Preprocessing completed in 0.001 seconds.
+Selected 16 landmark nodes.
+Reading query file: small_q.txt...
+Query 1: 56 -> 31 = 63 (0.012 ms)
+Query 2: 7 -> 49 = 80 (0.007 ms)
+Query 3: 37 -> 70 = 58 (0.007 ms)
+Query 4: 69 -> 59 = 112 (0.007 ms)
+Query 5: 97 -> 44 = 70 (0.007 ms)
+Query 6: 33 -> 33 = 0 (0.007 ms)
+Query 7: 7 -> 43 = 103 (0.006 ms)
+Query 8: 56 -> 29 = 92 (0.006 ms)
+Query 9: 73 -> 81 = 41 (0.006 ms)
+Query 10: 69 -> 18 = 161 (0.006 ms)
+Query 11: 49 -> 13 = 9 (0.006 ms)
+Query 12: 49 -> 2 = 79 (0.006 ms)
+Query 13: 64 -> 32 = 123 (0.006 ms)
+Query 14: 6 -> 75 = 102 (0.008 ms)
+Query 15: 86 -> 92 = 94 (0.006 ms)
+Query 16: 85 -> 87 = 81 (0.006 ms)
+Query 17: 0 -> 38 = 145 (0.005 ms)
+Query 18: 15 -> 14 = 98 (0.006 ms)
+Query 19: 18 -> 8 = 193 (0.006 ms)
+Query 20: 17 -> 78 = 44 (0.006 ms)
+Query 21: 69 -> 47 = 107 (0.008 ms)
+Query 22: 89 -> 57 = 23 (0.019 ms)
+Query 23: 99 -> 78 = 68 (0.020 ms)
+Query 24: 39 -> 28 = 87 (0.007 ms)
+Query 25: 77 -> 18 = 132 (0.006 ms)
+Query 26: 93 -> 67 = 106 (0.009 ms)
+Query 27: 45 -> 29 = 148 (0.006 ms)
+Query 28: 41 -> 14 = 89 (0.006 ms)
+Query 29: 10 -> 84 = 60 (0.006 ms)
+Query 30: 0 -> 7 = 115 (0.006 ms)
+Query 31: 57 -> 7 = 73 (0.006 ms)
+Query 32: 68 -> 19 = 139 (0.005 ms)
+Query 33: 62 -> 82 = 48 (0.006 ms)
+Query 34: 84 -> 89 = 49 (0.006 ms)
+Query 35: 41 -> 43 = 99 (0.006 ms)
+Query 36: 94 -> 34 = 68 (0.008 ms)
+Query 37: 68 -> 92 = 96 (0.006 ms)
+Query 38: 23 -> 43 = 68 (0.006 ms)
+Query 39: 12 -> 68 = 81 (0.006 ms)
+Query 40: 38 -> 41 = 132 (0.006 ms)
+Query 41: 93 -> 55 = 31 (0.006 ms)
+Query 42: 57 -> 17 = 69 (0.006 ms)
+Query 43: 58 -> 70 = 110 (0.006 ms)
+Query 44: 29 -> 4 = 68 (0.006 ms)
+Query 45: 43 -> 18 = 144 (0.006 ms)
+Query 46: 50 -> 95 = 45 (0.005 ms)
+Query 47: 13 -> 73 = 61 (0.007 ms)
+Query 48: 42 -> 44 = 71 (0.006 ms)
+Query 49: 48 -> 73 = 69 (0.006 ms)
+Query 50: 72 -> 13 = 61 (0.005 ms)
+Processed 50 queries.
+Query time: 0.001 seconds.
+Average query time: 0.014 ms.
+
+    ~/Downloads/14  ./_run-accuracy.sh medium.json medium_q.txt                                       ✔ 
+============================================================
+PATHFINDER ACCURACY
+============================================================
+Landmarks: 16
+Refinement: 100 ms
+Selection: current coverage/farthest-first
+Graph: medium.json
+Queries: medium_q.txt
+============================================================
+
+
+Preprocessing started.
+Preprocessing limit: 60 seconds.
+Preprocessing working deadline: 59.500 seconds.
+Loaded graph: 10000 nodes, 30000 undirected edges, 60000 adjacency entries.
+Connected components: 25
+Largest component: 9976 nodes.
+Configured landmark target: 16.
+Configured query refinement period: 100 ms.
+Preprocessing completed in 1.744 seconds.
+Selected 16 landmark nodes.
+Reading query file: medium_q.txt...
+Query 1: 8362 -> 932 = 224 (0.546 ms)
+Query 2: 9941 -> 9622 = 133 (0.016 ms)
+Query 3: 368 -> 1537 = 157 (0.075 ms)
+Query 4: 2487 -> 3438 = 123 (0.030 ms)
+Query 5: 6145 -> 337 = 146 (0.060 ms)
+Query 6: 5012 -> 4045 = 133 (0.026 ms)
+Query 7: 9156 -> 9646 = 150 (0.056 ms)
+Query 8: 3832 -> 8157 = 146 (0.128 ms)
+Query 9: 6984 -> 6176 = 262 (0.157 ms)
+Query 10: 7839 -> 4802 = 170 (0.114 ms)
+Query 11: 4396 -> 6245 = 201 (0.279 ms)
+Query 12: 8989 -> 4015 = 219 (0.089 ms)
+Query 13: 2365 -> 4355 = 145 (0.024 ms)
+Query 14: 8168 -> 1847 = 151 (0.029 ms)
+Query 15: 5425 -> 413 = 214 (0.112 ms)
+Query 16: 6795 -> 1275 = 137 (0.015 ms)
+Query 17: 6296 -> 8894 = 215 (0.213 ms)
+Query 18: 5921 -> 4838 = 204 (0.037 ms)
+Query 19: 1202 -> 5122 = 160 (0.058 ms)
+Query 20: 8629 -> 8563 = 202 (0.072 ms)
+Query 21: 5532 -> 9271 = 97 (0.014 ms)
+Query 22: 2802 -> 6348 = 209 (0.172 ms)
+Query 23: 7465 -> 5915 = 163 (0.029 ms)
+Query 24: 5247 -> 3716 = 169 (0.136 ms)
+Query 25: 3499 -> 817 = 140 (0.044 ms)
+Query 26: 6821 -> 1529 = 115 (0.016 ms)
+Query 27: 855 -> 7529 = 120 (0.076 ms)
+Query 28: 571 -> 7568 = 222 (0.136 ms)
+Query 29: 8651 -> 4399 = 213 (0.074 ms)
+Query 30: 5340 -> 7181 = 190 (0.084 ms)
+Query 31: 7743 -> 5670 = 167 (0.107 ms)
+Query 32: 8148 -> 1361 = 133 (0.008 ms)
+Query 33: 1667 -> 6952 = 160 (0.060 ms)
+Query 34: 2618 -> 955 = 169 (0.021 ms)
+Query 35: 1221 -> 7931 = 215 (0.019 ms)
+Query 36: 8472 -> 4675 = 138 (0.006 ms)
+Query 37: 3397 -> 691 = 185 (0.093 ms)
+Query 38: 7453 -> 3807 = 168 (0.106 ms)
+Query 39: 5216 -> 9314 = 117 (0.025 ms)
+Query 40: 9475 -> 2946 = 315 (0.088 ms)
+Query 41: 1666 -> 8194 = 170 (0.007 ms)
+Query 42: 3315 -> 7397 = 120 (0.007 ms)
+Query 43: 2884 -> 6670 = 139 (0.009 ms)
+Query 44: 8623 -> 8965 = 132 (0.014 ms)
+Query 45: 361 -> 8012 = 205 (0.477 ms)
+Query 46: 3402 -> 1733 = 192 (0.189 ms)
+Query 47: 9082 -> 4078 = 175 (0.023 ms)
+Query 48: 8206 -> 8690 = 122 (0.017 ms)
+Query 49: 3108 -> 3757 = 178 (0.028 ms)
+Query 50: 3778 -> 5148 = 189 (0.064 ms)
+Processed 50 queries.
+Query time: 0.005 seconds.
+Average query time: 0.094 ms.
+
+    ~/Downloads/14  ./_run-accuracy.sh large.json large_q.txt                                         ✔ 
+============================================================
+PATHFINDER ACCURACY
+============================================================
+Landmarks: 16
+Refinement: 100 ms
+Selection: current coverage/farthest-first
+Graph: large.json
+Queries: large_q.txt
+============================================================
+
+
+Preprocessing started.
+Preprocessing limit: 60 seconds.
+Preprocessing working deadline: 59.500 seconds.
+Loaded graph: 1000000 nodes, 3000000 undirected edges, 6000000 adjacency entries.
+Connected components: 2473
+Largest component: 997510 nodes.
+Configured landmark target: 16.
+Configured query refinement period: 100 ms.
+Preprocessing completed in 59.504 seconds.
+Selected 16 landmark nodes.
+Reading query file: large_q.txt...
+Query 1: 153850 -> 439765 = 231 (9.357 ms)
+Query 2: 566032 -> 165752 = 237 (3.316 ms)
+Query 3: 99651 -> 743280 = 327 (64.362 ms)
+Query 4: 379207 -> 719503 = 275 (51.519 ms)
+Query 5: 677885 -> 244612 = 263 (71.120 ms)
+Query 6: 148703 -> 792637 = 268 (23.388 ms)
+Query 7: 691631 -> 662781 = 252 (2.891 ms)
+Query 8: 525804 -> 338213 = 396 (100.044 ms)
+Query 9: 77943 -> 74392 = 269 (20.974 ms)
+Query 10: 614200 -> 13941 = 224 (5.778 ms)
+Query 11: 490785 -> 933629 = 197 (1.573 ms)
+Query 12: 700440 -> 79689 = 383 (100.042 ms)
+Query 13: 341560 -> 152752 = 198 (4.228 ms)
+Query 14: 181978 -> 764439 = 245 (57.014 ms)
+Query 15: 692857 -> 276907 = 202 (3.978 ms)
+Query 16: 831357 -> 228142 = 217 (2.886 ms)
+Query 17: 754928 -> 930841 = 255 (13.489 ms)
+Query 18: 131931 -> 74154 = 314 (51.243 ms)
+Query 19: 16958 -> 369699 = 251 (39.469 ms)
+Query 20: 688221 -> 446424 = 256 (49.491 ms)
+Processed 20 queries.
+Query time: 0.677 seconds.
+Average query time: 33.842 ms.
+
+    ~/Downloads/14      

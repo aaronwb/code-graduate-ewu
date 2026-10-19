@@ -1,0 +1,145 @@
+(venv) cortex% python 5.py small.json 
+Graph loaded successfully.
+Nodes: 100
+Preprocessing time: 0.000249 seconds
+
+Enter query file path (or type exit): small_q.txt
+Path 56 -> 31: Length=63, Time=0.000060s
+Path 7 -> 49: Length=80, Time=0.000024s
+Path 37 -> 70: Length=58, Time=0.000014s
+Path 69 -> 59: Length=112, Time=0.000045s
+Path 97 -> 44: Length=70, Time=0.000015s
+Path 33 -> 33: Length=0, Time=0.000000s
+Path 7 -> 43: Length=103, Time=0.000030s
+Path 56 -> 29: Length=92, Time=0.000038s
+Path 73 -> 81: Length=41, Time=0.000012s
+Path 69 -> 18: Length=161, Time=0.000049s
+Path 49 -> 13: Length=9, Time=0.000002s
+Path 49 -> 2: Length=79, Time=0.000032s
+Path 64 -> 32: Length=123, Time=0.000047s
+Path 6 -> 75: Length=102, Time=0.000030s
+Path 86 -> 92: Length=94, Time=0.000039s
+Path 85 -> 87: Length=81, Time=0.000026s
+Path 0 -> 38: Length=145, Time=0.000046s
+Path 15 -> 14: Length=98, Time=0.000037s
+Path 18 -> 8: Length=193, Time=0.000048s
+Path 17 -> 78: Length=44, Time=0.000002s
+Path 69 -> 47: Length=107, Time=0.000029s
+Path 89 -> 57: Length=23, Time=0.000002s
+Path 99 -> 78: Length=68, Time=0.000024s
+Path 39 -> 28: Length=87, Time=0.000022s
+Path 77 -> 18: Length=132, Time=0.000046s
+Path 93 -> 67: Length=106, Time=0.000044s
+Path 45 -> 29: Length=148, Time=0.000045s
+Path 41 -> 14: Length=89, Time=0.000032s
+Path 10 -> 84: Length=60, Time=0.000010s
+Path 0 -> 7: Length=115, Time=0.000037s
+Path 57 -> 7: Length=73, Time=0.000029s
+Path 68 -> 19: Length=139, Time=0.000044s
+Path 62 -> 82: Length=48, Time=0.000009s
+Path 84 -> 89: Length=49, Time=0.000012s
+Path 41 -> 43: Length=99, Time=0.000034s
+Path 94 -> 34: Length=68, Time=0.000028s
+Path 68 -> 92: Length=96, Time=0.000028s
+Path 23 -> 43: Length=68, Time=0.000026s
+Path 12 -> 68: Length=81, Time=0.000029s
+Path 38 -> 41: Length=132, Time=0.000029s
+Path 93 -> 55: Length=31, Time=0.000007s
+Path 57 -> 17: Length=69, Time=0.000025s
+Path 58 -> 70: Length=110, Time=0.000036s
+Path 29 -> 4: Length=68, Time=0.000009s
+Path 43 -> 18: Length=144, Time=0.000046s
+Path 50 -> 95: Length=45, Time=0.000011s
+Path 13 -> 73: Length=61, Time=0.000020s
+Path 42 -> 44: Length=71, Time=0.000026s
+Path 48 -> 73: Length=69, Time=0.000018s
+Path 72 -> 13: Length=61, Time=0.000008s
+
+Enter query file path (or type exit): exit
+(venv) cortex% python 5.py medium.json
+Graph loaded successfully.
+Nodes: 10000
+Preprocessing time: 0.015293 seconds
+
+Enter query file path (or type exit): medium_q.txt
+Path 8362 -> 932: Length=224, Time=0.013288s
+Path 9941 -> 9622: Length=133, Time=0.001289s
+Path 368 -> 1537: Length=157, Time=0.007240s
+Path 2487 -> 3438: Length=123, Time=0.001543s
+Path 6145 -> 337: Length=146, Time=0.001610s
+Path 5012 -> 4045: Length=133, Time=0.003246s
+Path 9156 -> 9646: Length=150, Time=0.005217s
+Path 3832 -> 8157: Length=146, Time=0.006635s
+Path 6984 -> 6176: Length=262, Time=0.010580s
+Path 7839 -> 4802: Length=170, Time=0.006746s
+Path 4396 -> 6245: Length=201, Time=0.008675s
+Path 8989 -> 4015: Length=219, Time=0.009170s
+Path 2365 -> 4355: Length=145, Time=0.003500s
+Path 8168 -> 1847: Length=151, Time=0.003117s
+Path 5425 -> 413: Length=214, Time=0.007671s
+Path 6795 -> 1275: Length=137, Time=0.002483s
+Path 6296 -> 8894: Length=215, Time=0.009201s
+Path 5921 -> 4838: Length=204, Time=0.005484s
+Path 1202 -> 5122: Length=160, Time=0.006785s
+Path 8629 -> 8563: Length=202, Time=0.008218s
+Path 5532 -> 9271: Length=97, Time=0.000523s
+Path 2802 -> 6348: Length=209, Time=0.009601s
+Path 7465 -> 5915: Length=163, Time=0.005787s
+Path 5247 -> 3716: Length=169, Time=0.007059s
+Path 3499 -> 817: Length=140, Time=0.004046s
+Path 6821 -> 1529: Length=115, Time=0.002375s
+Path 855 -> 7529: Length=120, Time=0.002575s
+Path 571 -> 7568: Length=222, Time=0.009921s
+Path 8651 -> 4399: Length=213, Time=0.009002s
+Path 5340 -> 7181: Length=190, Time=0.006906s
+Path 7743 -> 5670: Length=167, Time=0.008418s
+Path 8148 -> 1361: Length=133, Time=0.002201s
+Path 1667 -> 6952: Length=160, Time=0.003791s
+Path 2618 -> 955: Length=169, Time=0.001355s
+Path 1221 -> 7931: Length=215, Time=0.004040s
+Path 8472 -> 4675: Length=138, Time=0.001226s
+Path 3397 -> 691: Length=185, Time=0.005761s
+Path 7453 -> 3807: Length=168, Time=0.008019s
+Path 5216 -> 9314: Length=117, Time=0.001177s
+Path 9475 -> 2946: Length=315, Time=0.006841s
+Path 1666 -> 8194: Length=170, Time=0.000329s
+Path 3315 -> 7397: Length=120, Time=0.000572s
+Path 2884 -> 6670: Length=139, Time=0.003264s
+Path 8623 -> 8965: Length=132, Time=0.001159s
+Path 361 -> 8012: Length=205, Time=0.010285s
+Path 3402 -> 1733: Length=192, Time=0.009311s
+Path 9082 -> 4078: Length=175, Time=0.003740s
+Path 8206 -> 8690: Length=122, Time=0.001286s
+Path 3108 -> 3757: Length=178, Time=0.005272s
+Path 3778 -> 5148: Length=189, Time=0.009213s
+
+Enter query file path (or type exit): exit
+(venv) cortex% python 5.py large.json 
+Graph loaded successfully.
+Nodes: 1000000
+Preprocessing time: 2.669854 seconds
+
+Enter query file path (or type exit): large_q.txt
+Path 153850 -> 439765: Length=231, Time=1.047449s
+Path 566032 -> 165752: Length=237, Time=0.451561s
+Path 99651 -> 743280: Length=327, Time=4.444327s
+Path 379207 -> 719503: Length=275, Time=4.295764s
+Path 677885 -> 244612: Length=263, Time=3.543459s
+Path 148703 -> 792637: Length=268, Time=3.182583s
+Path 691631 -> 662781: Length=252, Time=1.565623s
+Path 525804 -> 338213: Length=253, Time=4.414387s
+Path 77943 -> 74392: Length=269, Time=2.750516s
+Path 614200 -> 13941: Length=224, Time=1.367382s
+Path 490785 -> 933629: Length=197, Time=0.427064s
+Path 700440 -> 79689: Length=229, Time=3.364191s
+Path 341560 -> 152752: Length=198, Time=0.258564s
+Path 181978 -> 764439: Length=245, Time=2.868622s
+Path 692857 -> 276907: Length=202, Time=1.039607s
+Path 831357 -> 228142: Length=217, Time=1.215971s
+Path 754928 -> 930841: Length=255, Time=4.019364s
+Path 131931 -> 74154: Length=314, Time=4.241296s
+Path 16958 -> 369699: Length=251, Time=3.707457s
+Path 688221 -> 446424: Length=256, Time=3.118259s
+
+Enter query file path (or type exit): exit
+(venv) cortex% 

@@ -1,0 +1,135 @@
+    ~/Projects/code-graduate-ewu/cyber-580/2-path-graph-analysis  python 2.py small.json                                                                                                                                                     ✔  2-path-graph-analysis  
+Memory usage: 14.74 MiB
+Graph preparation took 0.0017 seconds.
+Enter the path to the query file: small_q.txt
+56 -> 31: Path [56, 31], total cost 63. Time: 0.000057 seconds
+7 -> 49: Path [7, 81, 94, 13, 57, 49], total cost 80. Time: 0.000022 seconds
+37 -> 70: Path [37, 73, 74, 70], total cost 58. Time: 0.000013 seconds
+69 -> 59: Path [69, 32, 45, 50, 59], total cost 112. Time: 0.000042 seconds
+97 -> 44: Path [97, 11, 44], total cost 70. Time: 0.000014 seconds
+33 -> 33: Path [33], total cost 0. Time: 0.000000 seconds
+7 -> 43: Path [7, 81, 93, 56, 22, 43], total cost 103. Time: 0.000030 seconds
+56 -> 29: Path [56, 93, 86, 23, 29], total cost 92. Time: 0.000038 seconds
+73 -> 81: Path [73, 93, 81], total cost 41. Time: 0.000012 seconds
+69 -> 18: Path [69, 43, 22, 56, 36, 42, 70, 53, 18], total cost 161. Time: 0.000050 seconds
+49 -> 13: Path [49, 57, 13], total cost 9. Time: 0.000002 seconds
+49 -> 2: Path [49, 57, 13, 94, 62, 2], total cost 79. Time: 0.000032 seconds
+64 -> 32: Path [64, 33, 43, 69, 32], total cost 123. Time: 0.000048 seconds
+6 -> 75: Path [6, 36, 56, 93, 75], total cost 102. Time: 0.000027 seconds
+86 -> 92: Path [86, 23, 33, 9, 92], total cost 94. Time: 0.000040 seconds
+85 -> 87: Path [85, 39, 74, 87], total cost 81. Time: 0.000027 seconds
+0 -> 38: Path [0, 31, 40, 70, 42, 38], total cost 145. Time: 0.000076 seconds
+15 -> 14: Path [15, 26, 13, 79, 14], total cost 98. Time: 0.000042 seconds
+18 -> 8: Path [18, 53, 70, 74, 71, 63, 8], total cost 193. Time: 0.000050 seconds
+17 -> 78: Path [17, 58, 78], total cost 44. Time: 0.000003 seconds
+69 -> 47: Path [69, 43, 33, 47], total cost 107. Time: 0.000031 seconds
+89 -> 57: Path [89, 49, 57], total cost 23. Time: 0.000002 seconds
+99 -> 78: Path [99, 94, 78], total cost 68. Time: 0.000025 seconds
+39 -> 28: Path [39, 85, 90, 9, 33, 64, 28], total cost 87. Time: 0.000022 seconds
+77 -> 18: Path [77, 64, 33, 9, 53, 18], total cost 132. Time: 0.000047 seconds
+93 -> 67: Path [93, 86, 90, 85, 39, 67], total cost 106. Time: 0.000044 seconds
+45 -> 29: Path [45, 50, 59, 52, 29], total cost 148. Time: 0.000045 seconds
+41 -> 14: Path [41, 99, 74, 70, 14], total cost 89. Time: 0.000033 seconds
+10 -> 84: Path [10, 23, 33, 84], total cost 60. Time: 0.000010 seconds
+0 -> 7: Path [0, 31, 78, 94, 81, 7], total cost 115. Time: 0.000038 seconds
+57 -> 7: Path [57, 13, 94, 81, 7], total cost 73. Time: 0.000029 seconds
+68 -> 19: Path [68, 0, 66, 19], total cost 139. Time: 0.000045 seconds
+62 -> 82: Path [62, 94, 82], total cost 48. Time: 0.000009 seconds
+84 -> 89: Path [84, 33, 9, 12, 89], total cost 49. Time: 0.000012 seconds
+41 -> 43: Path [41, 35, 73, 93, 56, 22, 43], total cost 99. Time: 0.000035 seconds
+94 -> 34: Path [94, 13, 26, 15, 34], total cost 68. Time: 0.000028 seconds
+68 -> 92: Path [68, 0, 92], total cost 96. Time: 0.000028 seconds
+23 -> 43: Path [23, 86, 93, 56, 22, 43], total cost 68. Time: 0.000026 seconds
+12 -> 68: Path [12, 9, 53, 68], total cost 81. Time: 0.000030 seconds
+38 -> 41: Path [38, 42, 9, 99, 41], total cost 132. Time: 0.000030 seconds
+93 -> 55: Path [93, 73, 55], total cost 31. Time: 0.000007 seconds
+57 -> 17: Path [57, 13, 94, 78, 58, 17], total cost 69. Time: 0.000026 seconds
+58 -> 70: Path [58, 42, 70], total cost 110. Time: 0.000036 seconds
+29 -> 4: Path [29, 90, 85, 4], total cost 68. Time: 0.000009 seconds
+43 -> 18: Path [43, 22, 56, 36, 42, 70, 53, 18], total cost 144. Time: 0.000046 seconds
+50 -> 95: Path [50, 59, 95], total cost 45. Time: 0.000011 seconds
+13 -> 73: Path [13, 57, 73], total cost 61. Time: 0.000021 seconds
+42 -> 44: Path [42, 44], total cost 71. Time: 0.000025 seconds
+48 -> 73: Path [48, 15, 34, 65, 88, 24, 73], total cost 69. Time: 0.000016 seconds
+72 -> 13: Path [72, 45, 50, 94, 13], total cost 61. Time: 0.000010 seconds
+
+    ~/Projects/code-graduate-ewu/cyber-580/2-path-graph-analysis  python 2.py medium.json                                                                                                                                             ✔  6s   2-path-graph-analysis  
+Memory usage: 29.83 MiB
+Graph preparation took 0.1510 seconds.
+Enter the path to the query file: medium_q.txt
+8362 -> 932: Path [8362, 5847, 8616, 2365, 6743, 4809, 5977, 4491, 932], total cost 224. Time: 0.013278 seconds
+9941 -> 9622: Path [9941, 6407, 1550, 1663, 7466, 8990, 4020, 5342, 9622], total cost 133. Time: 0.001223 seconds
+368 -> 1537: Path [368, 7509, 8382, 1416, 4217, 2370, 5215, 568, 6996, 4066, 1537], total cost 157. Time: 0.006526 seconds
+2487 -> 3438: Path [2487, 1989, 8190, 4953, 7621, 7977, 8424, 7190, 8636, 6810, 3438], total cost 123. Time: 0.001448 seconds
+6145 -> 337: Path [6145, 5101, 100, 8241, 5947, 4322, 8817, 7585, 337], total cost 146. Time: 0.001548 seconds
+5012 -> 4045: Path [5012, 4263, 9032, 3423, 1353, 6577, 5767, 2183, 6360, 4091, 6466, 489, 4045], total cost 133. Time: 0.003125 seconds
+9156 -> 9646: Path [9156, 5511, 6368, 5682, 8329, 7178, 9646], total cost 150. Time: 0.004742 seconds
+3832 -> 8157: Path [3832, 9086, 8764, 115, 6261, 9032, 3423, 1353, 6606, 8974, 8157], total cost 146. Time: 0.006075 seconds
+6984 -> 6176: Path [6984, 2581, 7575, 9041, 2004, 7133, 7015, 8281, 7500, 9315, 302, 6933, 9694, 7605, 6176], total cost 262. Time: 0.009885 seconds
+7839 -> 4802: Path [7839, 7874, 6219, 1555, 5669, 2471, 5229, 3567, 8397, 6830, 9883, 987, 8443, 4802], total cost 170. Time: 0.006287 seconds
+4396 -> 6245: Path [4396, 908, 4744, 263, 2911, 5018, 7367, 8297, 6677, 6942, 549, 6245], total cost 201. Time: 0.008003 seconds
+8989 -> 4015: Path [8989, 7563, 6188, 7052, 7224, 3864, 4287, 980, 8303, 7361, 5268, 5547, 4015], total cost 219. Time: 0.008636 seconds
+2365 -> 4355: Path [2365, 8616, 1989, 8190, 5945, 7180, 3528, 5080, 4355], total cost 145. Time: 0.003356 seconds
+8168 -> 1847: Path [8168, 9307, 3104, 4882, 2589, 2004, 9041, 7575, 6471, 1847], total cost 151. Time: 0.003039 seconds
+5425 -> 413: Path [5425, 1810, 501, 5157, 9253, 8774, 4156, 930, 4805, 413], total cost 214. Time: 0.007482 seconds
+6795 -> 1275: Path [6795, 90, 7923, 5898, 1917, 4712, 5156, 8150, 7003, 2819, 9720, 3438, 1275], total cost 137. Time: 0.002437 seconds
+6296 -> 8894: Path [6296, 3893, 884, 9819, 2415, 8843, 6280, 2013, 2495, 8894], total cost 215. Time: 0.008464 seconds
+5921 -> 4838: Path [5921, 5955, 2406, 955, 6368, 9705, 8201, 9801, 5938, 1461, 8737, 7450, 6906, 2602, 4838], total cost 204. Time: 0.005149 seconds
+1202 -> 5122: Path [1202, 7099, 8351, 4169, 5900, 4238, 1356, 9901, 3784, 4225, 8774, 9253, 5157, 7990, 6191, 5122], total cost 160. Time: 0.006681 seconds
+8629 -> 8563: Path [8629, 6692, 7844, 267, 9143, 7685, 3060, 6851, 9269, 8563], total cost 202. Time: 0.007499 seconds
+5532 -> 9271: Path [5532, 9599, 6671, 8390, 9271], total cost 97. Time: 0.000500 seconds
+2802 -> 6348: Path [2802, 2234, 2203, 203, 930, 4156, 964, 6249, 900, 6348], total cost 209. Time: 0.009281 seconds
+7465 -> 5915: Path [7465, 8797, 1203, 1448, 2214, 2231, 8612, 9322, 6676, 5915], total cost 163. Time: 0.005745 seconds
+5247 -> 3716: Path [5247, 5965, 3893, 884, 9819, 2415, 9858, 9991, 5377, 3716], total cost 169. Time: 0.006635 seconds
+3499 -> 817: Path [3499, 2575, 7447, 1279, 2421, 611, 3131, 6087, 817], total cost 140. Time: 0.003646 seconds
+6821 -> 1529: Path [6821, 9070, 8494, 9943, 1529], total cost 115. Time: 0.002275 seconds
+855 -> 7529: Path [855, 9552, 9331, 5268, 7361, 8303, 980, 4287, 3864, 7224, 8117, 7529], total cost 120. Time: 0.002300 seconds
+571 -> 7568: Path [571, 7174, 8949, 3265, 184, 9809, 1663, 1395, 9594, 5824, 7050, 8123, 7568], total cost 222. Time: 0.009064 seconds
+8651 -> 4399: Path [8651, 2762, 7702, 7503, 329, 7382, 3570, 21, 7383, 8685, 673, 3939, 7738, 4399], total cost 213. Time: 0.008669 seconds
+5340 -> 7181: Path [5340, 4744, 263, 100, 5310, 2623, 1431, 9417, 6022, 5027, 770, 4999, 7181], total cost 190. Time: 0.006794 seconds
+7743 -> 5670: Path [7743, 6818, 4305, 6801, 148, 6212, 7190, 8424, 3467, 6299, 9306, 5605, 8621, 5670], total cost 167. Time: 0.007495 seconds
+8148 -> 1361: Path [8148, 8692, 1361], total cost 133. Time: 0.002034 seconds
+1667 -> 6952: Path [1667, 3151, 9585, 2282, 9690, 3758, 6378, 9185, 6952], total cost 160. Time: 0.003691 seconds
+2618 -> 955: Path [2618, 646, 9408, 6067, 6959, 9255, 3938, 3457, 5941, 6368, 955], total cost 169. Time: 0.001257 seconds
+1221 -> 7931: Path [1221, 471, 2245, 7314, 4403, 832, 6017, 8878, 4178, 3250, 7931], total cost 215. Time: 0.003668 seconds
+8472 -> 4675: Path [8472, 1493, 3616, 6495, 5650, 4730, 1701, 8399, 4675], total cost 138. Time: 0.001186 seconds
+3397 -> 691: Path [3397, 9492, 4826, 5986, 6463, 1923, 323, 5157, 9253, 8774, 4225, 6081, 2759, 691], total cost 185. Time: 0.007419 seconds
+7453 -> 3807: Path [7453, 8529, 8156, 849, 898, 8603, 1926, 3807], total cost 168. Time: 0.006345 seconds
+5216 -> 9314: Path [5216, 153, 1621, 5241, 8686, 5287, 2750, 8459, 9314], total cost 117. Time: 0.001151 seconds
+9475 -> 2946: Path [9475, 9166, 9488, 6655, 1421, 5665, 980, 4287, 3864, 7224, 937, 8432, 7446, 2946], total cost 315. Time: 0.006729 seconds
+1666 -> 8194: Path [1666, 5328, 7763, 2579, 8630, 4432, 690, 8194], total cost 170. Time: 0.000322 seconds
+3315 -> 7397: Path [3315, 8241, 100, 7397], total cost 120. Time: 0.000569 seconds
+2884 -> 6670: Path [2884, 1845, 3023, 9287, 5672, 4470, 7645, 9131, 6670], total cost 139. Time: 0.003334 seconds
+8623 -> 8965: Path [8623, 8735, 5496, 6366, 6114, 7063, 7200, 6116, 8965], total cost 132. Time: 0.001172 seconds
+361 -> 8012: Path [361, 4654, 3268, 7336, 6195, 5859, 582, 471, 2566, 8150, 7003, 2819, 6476, 5626, 8012], total cost 205. Time: 0.010501 seconds
+3402 -> 1733: Path [3402, 8419, 3239, 6069, 8851, 2677, 5308, 1208, 6349, 9514, 4346, 1733], total cost 192. Time: 0.008980 seconds
+9082 -> 4078: Path [9082, 444, 7641, 3404, 693, 89, 5512, 8924, 9826, 4078], total cost 175. Time: 0.003557 seconds
+8206 -> 8690: Path [8206, 6024, 1523, 1461, 8737, 2692, 7261, 895, 8690], total cost 122. Time: 0.001268 seconds
+3108 -> 3757: Path [3108, 7489, 9909, 9462, 1527, 5137, 9097, 3166, 3757], total cost 178. Time: 0.005164 seconds
+3778 -> 5148: Path [3778, 7256, 3131, 611, 2421, 1279, 7226, 9464, 9037, 967, 2003, 5148], total cost 189. Time: 0.009089 seconds
+
+    ~/Projects/code-graduate-ewu/cyber-580/2-path-graph-analysis  python 2.py large.json                                                                                                                                              ✔  9s   2-path-graph-analysis  
+Preparation reached 1 GiB of memory. Continuing queries with the partial graph.
+Memory usage: 104.71 MiB
+Graph preparation took 2.5099 seconds.
+Enter the path to the query file: large_q.txt
+153850 -> 439765: No route found (or unknown node). Time: 0.000002 seconds
+566032 -> 165752: No route found (or unknown node). Time: 0.000002 seconds
+99651 -> 743280: No route found (or unknown node). Time: 0.000001 seconds
+379207 -> 719503: No route found (or unknown node). Time: 0.000000 seconds
+677885 -> 244612: No route found (or unknown node). Time: 0.000001 seconds
+148703 -> 792637: No route found (or unknown node). Time: 0.000001 seconds
+691631 -> 662781: No route found (or unknown node). Time: 0.000000 seconds
+525804 -> 338213: No route found (or unknown node). Time: 0.000001 seconds
+77943 -> 74392: No route found (or unknown node). Time: 0.000006 seconds
+614200 -> 13941: No route found (or unknown node). Time: 0.000000 seconds
+490785 -> 933629: No route found (or unknown node). Time: 0.000000 seconds
+700440 -> 79689: No route found (or unknown node). Time: 0.000000 seconds
+341560 -> 152752: No route found (or unknown node). Time: 0.000000 seconds
+181978 -> 764439: No route found (or unknown node). Time: 0.000001 seconds
+692857 -> 276907: No route found (or unknown node). Time: 0.000000 seconds
+831357 -> 228142: No route found (or unknown node). Time: 0.000000 seconds
+754928 -> 930841: No route found (or unknown node). Time: 0.000000 seconds
+131931 -> 74154: No route found (or unknown node). Time: 0.000002 seconds
+16958 -> 369699: No route found (or unknown node). Time: 0.000000 seconds
+688221 -> 446424: No route found (or unknown node). Time: 0.000000 seconds
