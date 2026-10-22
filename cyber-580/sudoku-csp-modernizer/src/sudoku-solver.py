@@ -14,7 +14,7 @@ squares   = cross(rows, cols)
 # Structure
 Square    = str
 DigitSet  = str
-Grid      = Dict[Square, DigitSet] # E.g. {'A9': '123', ...}
+Grid      = Dict[Square, DigitSet]
 all_boxes = [cross(rs, cs)  for rs in ('ABC','DEF','GHI') for cs in ('123','456','789')]
 all_units = [cross(rows, c) for c in cols] + [cross(r, cols) for r in rows] + all_boxes
 units     = {s: tuple(u for u in all_units if s in u) for s in squares}
@@ -49,15 +49,15 @@ def fill(grid: Grid, s: str, d: str) -> Optional[Grid]:
 def eliminate(grid: Grid, s: str, d: str) -> Optional[Grid]:
     "Remove d from s's domain and propagate both rules (mutates grid)."
     if d not in grid[s]:
-        return grid                                  # already gone
+        return grid # already gone
     grid[s] = grid[s].replace(d, '')
     if not grid[s]:
-        return None                                  # domain wipe-out
-    if len(grid[s]) == 1:                            # rule 1: singleton => prune peers
+        return None # domain wipe-out
+    if len(grid[s]) == 1: # rule 1: singleton => prune peers
         d2 = grid[s]
         if not all(eliminate(grid, p, d2) for p in peers[s]):
             return None
-    for u in units[s]:                               # rule 2: hidden single in a unit
+    for u in units[s]: # rule 2: hidden single in a unit
         places = [p for p in u if d in grid[p]]
         if not places or (len(places) == 1 and not fill(grid, places[0], d)):
             return None
