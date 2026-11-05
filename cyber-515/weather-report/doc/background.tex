@@ -1,0 +1,20 @@
+\subsection{Data}
+
+I pulled the data from the Open-Meteo Historical Weather API~\cite{openmeteo}. The API takes in a request with the location, the dates, and the weather variables wanted, then sends back the data. I requested the hourly variable \texttt{temperature\_2m}, which is the air temperature 2 meters above the ground, for latitude $41.08$ and longitude $-81.59$ (Akron, Ohio). The request covered July 27, 2004 to November 1, 2026, which is 22 years 2 months and 4 days of data. I set the temperatures to be in Fahrenheit, and the times to use Akron's local time zone (\texttt{America/New\_York}), so each day starts at local midnight.
+
+\subsection{Calculations}
+
+To describe each day, I calculated two numbers from that day's hourly readings. Let $x_1, x_2, \dots, x_n$ be the hourly temperatures for one day, where $n$ is the number of readings (24). The first number is the daily mean $\bar{x}$, which is the average of the readings,
+\begin{equation}
+  \bar{x} = \frac{1}{n} \sum_{i=1}^{n} x_i ,
+  \label{eq:mean}
+\end{equation}
+and the second is the daily standard deviation $s$, which measures how far the readings spread out from that mean,
+\begin{equation}
+  s = \sqrt{\frac{1}{n-1} \sum_{i=1}^{n} \left(x_i - \bar{x}\right)^2 } .
+  \label{eq:std}
+\end{equation}
+
+Equation~\ref{eq:std} is the sample standard deviation, which divides by $n-1$ instead of $n$. A large $s$ means the temperature swung a lot that day, while a small $s$ means the day stayed fairly steady.
+
+The \texttt{pandas} \texttt{resample()} function groups the hourly readings into days, and then \texttt{mean()} and \texttt{std()} apply Equations~\ref{eq:mean} and~\ref{eq:std} to every day at once. Both numbers are calculated from all of the hourly readings, but for the plots I only kept one reading every 3 hours (00:00, 03:00, \dots, 21:00) as the raw data points. In the plots, each day's standard deviation is drawn as a shaded band from $\bar{x} - s$ to $\bar{x} + s$.

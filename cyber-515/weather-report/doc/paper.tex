@@ -1,0 +1,72 @@
+
+\documentclass[letterpaper,twocolumn,10pt]{article}
+\usepackage{usenix-2020-09}
+
+% to be able to draw some self-contained figs
+\usepackage{tikz}
+\usepackage{amsmath}
+
+% inlined bib file
+\usepackage{filecontents}
+
+% need to make the rectangle figures fit
+\renewcommand{\dbltopfraction}{0.9}
+\renewcommand{\dblfloatpagefraction}{0.8}
+\setcounter{dbltopnumber}{3}
+
+
+%-------------------------------------------------------------------------------
+\begin{document}
+%-------------------------------------------------------------------------------
+
+%don't want date printed
+\date{}
+
+% make title bold and 14 pt font (Latex default is non-bold, 16 pt)
+\title{\Large \bf Daily Mean and Variability of Hourly Temperature\\
+  in Akron, Ohio, 2004--2026}
+
+%for single author (just remove % characters)
+\author{
+{\rm Aaron Williams-Breth}\\
+CYBR 515\\
+awilliamsbreth@ewu.edu
+} % end author
+
+\maketitle
+
+%-------------------------------------------------------------------------------
+\begin{abstract}
+%-------------------------------------------------------------------------------
+This paper showcases 22 years of hourly temperature data for
+Akron, Ohio, to see how temperature changes over a year and within a
+single day. I calculated the mean and standard deviation of every day,
+and plotted them alongside the raw readings at three different time scales: the
+full record, one year, and one month.
+\end{abstract}
+
+
+%-------------------------------------------------------------------------------
+\section{Introduction}
+%-------------------------------------------------------------------------------
+\input{intro}
+
+%-------------------------------------------------------------------------------
+\section{Footnotes, Verbatim, and Citations}
+%-------------------------------------------------------------------------------
+\input{background}
+
+%-------------------------------------------------------------------------------
+\section{Floating Figures and Lists}
+
+\input{eval}
+%-------------------------------------------------------------------------------
+\bibliographystyle{plain}
+\bibliography{refs}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%  LocalWords:  endnotes includegraphics fread ptr nobj noindent
+%%  LocalWords:  pdflatex acks
