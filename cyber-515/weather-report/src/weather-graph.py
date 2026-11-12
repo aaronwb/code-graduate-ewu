@@ -4,10 +4,9 @@
 import requests
 import pandas as pd
 import matplotlib.pyplot as plt
-import matplotlib.dates as mdates
 
 weather_url = "https://archive-api.open-meteo.com/v1/archive"
-# Weather from Akron Ohio (@41.0842034,-81.5957888) (REPRESENT) from the year I was born to nov 1st placed into a dictionary to interact with the API
+# Weather from Akron Ohio (@41.0842034,-81.5957888) (REPRESENT) from the year I was born to nov 1st placed into a dictionary to interact with the API the easy way throuh the requests library
 params = {
     "latitude": 41.08,
     "longitude": -81.59,
@@ -33,6 +32,7 @@ daily_std = temp.resample("D").std()
 raw = temp[temp.index.hour % 3 == 0]
 
 
+
 # Make the figure wide so 22 years have room to spread out
 plt.figure(figsize=(14, 5))
 
@@ -42,21 +42,32 @@ plt.figure(figsize=(14, 5))
 # Gray dots: raw readings every 3 hours
 plt.scatter(raw.index, raw, s=0.3, color="gray", label="Every 3 hours")
 
-# Orange band: daily mean plus or minus 1 standard deviation
-plt.fill_between(daily_mean.index, daily_mean - daily_std, daily_mean + daily_std, color="orange", alpha=0.5, label="Mean ± 1 std. dev.")
+# Orange band: daily mean plus or minus 1 standard deviation (learned you can do latex math notation using label=r"...")
+plt.fill_between(daily_mean.index, daily_mean - daily_std, daily_mean + daily_std, color="orange", alpha=0.5, label=r"Mean $\pm$ 1 std. dev.")
 
-# Dark blue line: daily mean (very thin so it doesn't cover the band)
-plt.plot(daily_mean.index, daily_mean, color="navy", linewidth=0.2, label="Daily mean")
+# Blue line: daily mean (very thin so it doesn't cover the band)
+plt.plot(daily_mean.index, daily_mean, color="blue", linewidth=0.2, label="Daily mean")
 
 # Labels and title
 plt.xlabel("Date")
-plt.ylabel("Temperature (°F)")
+plt.ylabel("Temperature (Fahrenheit)")
 plt.title("Hourly Temperature in Akron, OH, July 2004 - November 2026")
 
 # Extra room at the bottom for the legend, plus a light grid
-plt.ylim(-30, 105)
+plt.ylim(-60, 120)
 plt.grid(alpha=0.3)
 plt.legend(loc="lower center", ncol=3)
+
+# Extra Creative cause temp is boring alone, lets point out the highs and lows
+hot_time = temp.idxmax() # time of temp
+hot_val = temp.max() # temp number
+cold_time = temp.idxmin() # time of temp
+cold_val = temp.min() # temp number
+
+# Cool Arrows
+plt.annotate(f"Highest modeled temp: {hot_val:.0f}F on {hot_time.date()}", xy=(hot_time, hot_val), xytext=(hot_time, 112), ha="center", color="red", arrowprops=dict(arrowstyle="->", color="red"))
+plt.annotate(f"Lowest modeled temp: {cold_val:.0f}F on {cold_time.date()}", xy=(cold_time, cold_val), xytext=(cold_time, -38), ha="center", color="blue", arrowprops=dict(arrowstyle="->", color="blue"))
+
 
 # Save figure
 plt.savefig("temperature_full.png", dpi=200, bbox_inches="tight")
@@ -70,15 +81,15 @@ plt.figure(figsize=(14, 5))
 # Gray dots: raw readings every 3 hours
 plt.scatter(raw.loc["2025"].index, raw.loc["2025"], s=3, color="gray", label="Every 3 hours")
 
-# Orange band: daily mean plus or minus 1 standard deviation
-plt.fill_between(daily_mean.loc["2025"].index, daily_mean.loc["2025"] - daily_std.loc["2025"], daily_mean.loc["2025"] + daily_std.loc["2025"], color="orange", alpha=0.5, label="Mean ± 1 std. dev.")
+# Orange band: daily mean plus or minus 1 standard deviation (learned you can do latex math notation using label=r"...")
+plt.fill_between(daily_mean.loc["2025"].index, daily_mean.loc["2025"] - daily_std.loc["2025"], daily_mean.loc["2025"] + daily_std.loc["2025"], color="orange", alpha=0.5, label=r"Mean $\pm$ 1 std. dev.")
 
-# Dark blue line: daily mean
-plt.plot(daily_mean.loc["2025"].index, daily_mean.loc["2025"], color="navy", linewidth=1, label="Daily mean")
+# Blue line: daily mean
+plt.plot(daily_mean.loc["2025"].index, daily_mean.loc["2025"], color="blue", linewidth=1, label="Daily mean")
 
 # Labels and title
 plt.xlabel("Date")
-plt.ylabel("Temperature (F)")
+plt.ylabel("Temperature (Fahrenheit)")
 plt.title("Hourly Temperature in Akron, OH, 2025")
 
 # Extra room at the bottom for the legend, plus a light grid
@@ -97,7 +108,7 @@ print("Saved temperature_2025.png")
 # Third graph: zoom in on just July 2025 so the daily ups and downs are visible
 plt.figure(figsize=(14, 5))
 
-# Pull out just July 2025, otherwise the data sits at the top of the graph for some reason
+# Pull out just July 2025, and shift each daily mean/std to noon so it sits in the middle of its day (thats what shift(12, freq"h") is doing)
 month_raw = raw.loc["2025-07"]
 month_mean = daily_mean.loc["2025-07"].shift(12, freq="h")
 month_std = daily_std.loc["2025-07"].shift(12, freq="h")
@@ -105,21 +116,21 @@ month_std = daily_std.loc["2025-07"].shift(12, freq="h")
 # Gray dots: raw readings every 3 hours
 plt.scatter(month_raw.index, month_raw, s=12, color="gray", label="Every 3 hours")
 
-# Orange band: daily mean plus or minus 1 standard deviation
-plt.fill_between(month_mean.index, month_mean - month_std, month_mean + month_std, color="orange", alpha=0.5, label="Mean ± 1 std. dev.")
+# Orange band: daily mean plus or minus 1 standard deviation (learned you can do latex math notation using label=r"...")
+plt.fill_between(month_mean.index, month_mean - month_std, month_mean + month_std, color="orange", alpha=0.5, label=r"Mean $\pm$ 1 std. dev.")
 
-# Dark blue line: daily mean
-plt.plot(month_mean.index, month_mean, color="navy", linewidth=1.5, marker="o", markersize=3, label="Daily mean")
+# Blue line: daily mean
+plt.plot(month_mean.index, month_mean, color="blue", linewidth=1.5, marker="x", markersize=3, label="Daily mean")
 
 # Labels and title
 plt.xlabel("Date")
-plt.ylabel("Temperature (F)")
+plt.ylabel("Temperature (Fahrenheit)")
 plt.title("Hourly Temperature in Akron, OH, July 2025")
 
 # Limit it to 50 degrees to 105
 plt.ylim(50, 105)
 
-# Legend at the top, plus a light grid
+# Extra room at the bottom for the legend, plus a light grid
 plt.grid(alpha=0.3)
 plt.legend(loc="lower center", ncol=3)
 

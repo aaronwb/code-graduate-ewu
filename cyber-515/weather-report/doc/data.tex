@@ -1,0 +1,20 @@
+\subsection{Data}
+
+The data was pulled from the Open-Meteo Historical Weather API~\cite{metro}. The API returns data for a requested location, dates, and set of weather variables. The hourly variable \texttt{temperature\_2m}, which is the air temperature 2 meters above the ground, for latitude $41.08$ and longitude $-81.59$ (Akron, Ohio) was requested. The request covered July 27, 2004 to November 1, 2026, which is 22 years, 3 months, and 5 days of data. The temperatures are in Fahrenheit, and the timestamps use Akron's local time zone (\texttt{America/New\_York}) so that each day begins at local midnight.
+
+\subsection{Calculations}
+
+Each day is summarized by two values: the mean temperature and the standard deviation. For a day with $n$ hourly readings $x_1, x_2, \dots, x_n$ ($n = 24$), the daily mean is
+\begin{equation}
+  \bar{x} = \frac{1}{n} \sum_{i=1}^{n} x_i ,
+  \label{eq:mean}
+\end{equation}
+and the daily standard deviation is
+\begin{equation}
+  s = \sqrt{\frac{1}{n-1} \sum_{i=1}^{n} \left(x_i - \bar{x}\right)^2 } .
+  \label{eq:std}
+\end{equation}
+
+The mean describes the typical temperature of the day, and the standard deviation describes how far the hourly readings spread from it. A large $s$ indicates a large temperature swing during the day, while a small $s$ indicates a steady day. Equation~\ref{eq:std} divides by $n-1$, it is the sample standard deviation.
+
+Both values were computed with \texttt{pandas}~\cite{mckinney10:pandas}. The \texttt{resample()} function groups the hourly readings by day, and \texttt{mean()} and \texttt{std()} apply Equations~\ref{eq:mean} and~\ref{eq:std} to each day. All hourly readings are used in the calculations, but only readings at 3-hour intervals (00:00, 03:00, \dots, 21:00) are plotted and shown as raw data points. In each plot, the standard deviation is shown as a band from $\bar{x} - s$ to $\bar{x} + s$.

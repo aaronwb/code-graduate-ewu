@@ -1,0 +1,18 @@
+\begin{thebibliography}{1}
+
+\bibitem{chen2022dirty}
+Qibin Chen, Jeremy Lacomis, Edward~J. Schwartz, Claire Le~Goues, Graham Neubig,
+  and Bogdan Vasilescu.
+\newblock Augmenting decompiler output with learned variable names and types.
+\newblock In {\em USENIX Security Symposium}, pages 4327--4343, 2022.
+\newblock
+  \url{https://www.usenix.org/conference/usenixsecurity22/presentation/chen-qibin}.
+
+\bibitem{hu2024degpt}
+Peiwei Hu, Ruigang Liang, and Kai Chen.
+\newblock {DeGPT}: Optimizing decompiler output with {LLM}.
+\newblock In {\em Network and Distributed System Security Symposium (NDSS)},
+  2024.
+\newblock \url{https://dx.doi.org/10.14722/ndss.2024.24401}.
+
+\end{thebibliography}

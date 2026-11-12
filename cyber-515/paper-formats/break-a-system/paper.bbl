@@ -1,0 +1,20 @@
+\begin{thebibliography}{1}
+
+\bibitem{kolosnjaji2018adversarial}
+Bojan Kolosnjaji, Ambra Demontis, Battista Biggio, Davide Maiorca, Giorgio
+  Giacinto, Claudia Eckert, and Fabio Roli.
+\newblock Adversarial malware binaries: Evading deep learning for malware
+  detection in executables.
+\newblock In {\em European Signal Processing Conference (EUSIPCO)}, pages
+  533--537, 2018.
+\newblock \url{https://doi.org/10.23919/EUSIPCO.2018.8553214}.
+
+\bibitem{zhan2024malpatch}
+Dazhi Zhan, Yexin Duan, Yue Hu, Weili Li, Shize Guo, and Zhisong Pan.
+\newblock {MalPatch}: Evading {DNN}-based malware detection with adversarial
+  patches.
+\newblock {\em IEEE Transactions on Information Forensics and Security},
+  19:1183--1198, 2024.
+\newblock \url{https://doi.org/10.1109/TIFS.2023.3333567}.
+
+\end{thebibliography}

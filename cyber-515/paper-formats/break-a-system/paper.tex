@@ -1,0 +1,96 @@
+
+\documentclass[letterpaper,twocolumn,10pt]{article}
+\usepackage{usenix-2020-09}
+
+% to be able to draw some self-contained figs
+\usepackage{tikz}
+\usepackage{amsmath}
+
+% inlined bib file
+\usepackage{filecontents}
+
+% Macro for the Win
+\newcommand{\placeholder}{[blah blah blah.}
+
+%-------------------------------------------------------------------------------
+\begin{document}
+%-------------------------------------------------------------------------------
+
+%don't want date printed
+\date{}
+
+% make title bold and 14 pt font (Latex default is non-bold, 16 pt)
+\title{\Large \bf Break-A-System:\\
+  An (Incomplete) Example}
+
+%for single author (just remove % characters)
+\author{
+{\rm Aaron Williams-Breth}\\
+Eastern Washington Univeristy
+} % end author
+
+\maketitle
+
+%-------------------------------------------------------------------------------
+\begin{abstract}
+%-------------------------------------------------------------------------------
+Your abstract text goes here. Just a few facts. Whet our appetites.
+Not more than 200 words, if possible, and preferably closer to 150.
+\end{abstract}
+
+
+%-------------------------------------------------------------------------------
+\section{Introduction}
+\label{sec:intro}
+%-------------------------------------------------------------------------------
+\input{intro}
+ 
+%-------------------------------------------------------------------------------
+\section{Related Work}
+\label{sec:related}
+%-------------------------------------------------------------------------------
+\input{related}
+ 
+%-------------------------------------------------------------------------------
+\section{Preliminaries}
+\label{sec:prelim}
+%-------------------------------------------------------------------------------
+\input{prelim}
+ 
+%-------------------------------------------------------------------------------
+\section{Attack Methodology}
+\label{sec:method}
+%-------------------------------------------------------------------------------
+\input{method}
+ 
+%-------------------------------------------------------------------------------
+\section{Evaluation}
+\label{sec:eval}
+%-------------------------------------------------------------------------------
+\input{eval}
+ 
+%-------------------------------------------------------------------------------
+\section{Discussion}
+\label{sec:discussion}
+%-------------------------------------------------------------------------------
+\input{discussion}
+ 
+%-------------------------------------------------------------------------------
+\section{Conclusion}
+\label{sec:conclusion}
+%-------------------------------------------------------------------------------
+\input{conclusion}
+ 
+
+%-------------------------------------------------------------------------------
+% forces citation even though not refereneded
+\nocite{kolosnjaji2018adversarial,zhan2024malpatch}
+\bibliographystyle{plain}
+\bibliography{refs}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%  LocalWords:  endnotes includegraphics fread ptr nobj noindent
+%%  LocalWords:  pdflatex acks
